@@ -1,0 +1,47 @@
+Every \textbf{point mass} attracts every single other point mass by a \textbf{force} acting along the line intersecting both points. The force is proportionla to the product of the two masses and iversely proportional to the square of the distance between them:
+\[
+F = G\frac{m_1m_2}{r^2}
+\]
+where:
+\begin{itemize}
+	\item $F$ is the force between the masses
+	\item $G$ is the \textbf{gravitation constant} ($6.674\times 10^{-11} m^3\cdot kg^{-1}\cdot s^{-2}$)
+	\item $m_1$ is the first mass
+	\item $m_2$ is the second mass
+	\item $r$ is the distance between the centers of the masses
+\end{itemize}
+
+\section{Vector Form}
+Newton's law of universal gravitation can be written as a \textbf{vector equation} to account for the direction of the gravitational force as well as its magnitude:
+\[
+\mathbf{F}_{21} = -G\frac{m_1m_2}{|\mathbf{r}_{21}|^2}\hat{\mathbf{r}_{21}}
+\]
+where:
+\begin{itemize}
+	\item $\mathbf{F}_{21}$ is the force applied on object 2 excerted by object 1
+	\item $G$ is the \textbf{gravitation constant}
+	\item $m_1$ and $m_2$ are respectively the masses of objects 1 and 2
+	\item $|\mathbf{r}_{21}| = |\mathbf{r}_2 - \mathbf{r}_1|$ is the distance between objects 1 and 2
+	\item $\hat{\mathbf{r}}_{21} = \frac{\mathbf{r}_2 - \mathbf{r}_1}{|\mathbf{r})_2 - \mathbf{r}_1|}$ is the \textbf{unit vector} from object 1 to object 2
+\end{itemize}
+
+\section{Gravitational Field}
+The \textbf{gravitational field} $\mathbf{g}$ around a single particle of mass $M$ is a \textbf{vector field} consisting at every point of a vector pointing directly towards the particle. The magnitude of the field at every point is calculated by applying the universal law, and represents the force per unit mass on any object at that point in space. Because the force field is conservative, there is a scalar potential evergy per unit mass, $\Phi$, at each point in space associated with the force fields; this is called \textbf{gravitational potential}. The gravitational field equation is
+\[
+\mathbf{g} = \frac{\mathbf{F}}{m} = \frac{d^2\mathbf{R}}{dt^2} = -GM\frac{\hat{\mathbf{R}}}{|\mathbf{R}|^2} = -\nabla\Phi
+\]
+where:
+\begin{itemize}
+	\item $\mathbf{F}$ is the gravitational force
+	\item $m$ is the mass of the test particle
+	\item $\mathbf{R}$ is the position of the \textbf{test particle}
+	\item $\hat{\mathbf{R}}$ is a unit vector in the radial direction of $\mathbf{R}$
+	\item $t$ is time
+	\item $G$ is the gravitational constant
+	\item $\nabla$ is the \textbf{del operator}.
+\end{itemize}
+The equivalent field equation in terms of mass density $\rho$ of the attracting mass is:
+\[
+\nabla \cdot \mathbf {g} =-\nabla ^{2}\Phi =-4\pi G\rho
+\]
+which contains \textbf{Gauss's law for gravity}, and \textbf{Poisson's equation for gravity}. Newton's law implies Gauss's law, but not vice-versa.

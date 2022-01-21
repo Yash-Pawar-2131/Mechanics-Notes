@@ -1,0 +1,60 @@
+\documentclass[a4paper, 12pt]{book}
+\usepackage{import}
+\usepackage{../style}
+
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+
+\frontmatter
+\import{../}{title.tex}
+
+\clearpage
+\thispagestyle{empty}
+
+\tableofcontents
+
+\mainmatter
+\chapter{Introduction}
+\textbf{Mechanics} is the area of mathematics and physics concerned with the motions of physical objects, more specifically the relationships among \textbf{force}, \textbf{matter}, and \textbf{motion}.
+
+\section{Classical Mechanics}	
+\textbf{Classical mechanics}  is a physical theory describing the motion of macroscopic objects, from projectiles to parts of machinery, and astronomical objects, such as spacecraft, planets, stars, and galaxies. For objects governed by classical mechanics, if the present state is known, it is possible to predict how it will move in the future (\textbf{determinism}), and how it has moved in the past (\textbf{reversibility}).
+\subsection{Newtonian Mechanics}
+The earliest development of classical mechanics is often referred to as \textbf{Newtonian mechanics}. It consists of the physical concepts based on foundational works of \textbf{Sir Isaac Newton}, and the mathematical methods invented by \textbf{Gottfried Wilhelm Leibniz}, \textbf{Joseph-Louis Lagrange}, \textbf{Leonhard Euler}, and other contemporaries, in the 17th century to describe the motion of bodies under the influence of a system of \textbf{forces}.
+\subsection{Analytical Dynamics}
+Later, more abstract methods were developed, leading to the reformulations of classical mechanics known as \textbf{Lagrangian mechanics} and \textbf{Hamiltonian mechanics}. These advances, made predominantly in the 18th and 19th centuries, extend substantially beyond earlier works, particularly through their use of \textbf{analytical mechanics}.
+\section{Quantum Mechanics}
+Classical mechanics provides extremely accurate results when studying large objects that are not extremely massive and speeds not approaching the speed of light. When the objects being examined have about the size of an atom diameter, it becomes necessary to introduce the other major sub-field of mechanics: \textbf{quantum mechanics}.
+\section{Relativistic}
+To describe velocities that are not small compared to the \textbf{speed of light}, \textbf{Albert Einstein's} theory of \textbf{special relativity} is needed. In cases where objects become extremely massive, \textbf{Albert Einstein's} theory of \textbf{general relativity} becomes applicable.
+
+\section{Energy}
+In classical mechanics, \textbf{energy} is a conceptually and mathematically useful property, as it is a \textbf{conserved quantity}. Several formulations of mechanics have been developed using energy as a core concept.
+\\\\
+\textbf{Work} is a function of energy.
+\[
+W = \int_C \mathbf{F}\cdot d\mathbf{s}
+\]
+This says that the work ($W$) is equal to the \textbf{line integral} of the force $F$ along a path $C$. Work and thus energy is frame dependent.
+\\\\
+The total energy of a system is sometimes called the \textbf{Hamiltonian}, after William Rowan Hamilton. The classical equations of motion can be written in terms of the Hamiltonian, even for highly complex or abstract systems. These classical equations have remarkably direct analogs in nonrelativistic quantum mechanics.
+\\\\
+Another energy-related concept is called the \textbf{Lagrangian}, after Joseph-Louis Lagrange. This formalism is as fundamental as the Hamiltonian, and both can be used to derive the equations of motion or be derived from them. It was invented in the context of classical mechanics, but is generally useful in modern physics. Usually, the Lagrange formalism is mathematically more convenient than the Hamiltonian for non-conservative systems (such as systems with friction).
+\\\\
+\textbf{Noether's theorem} (1918) states that any differentiable symmetry of the action of a physical system has a corresponding \textbf{conservation law}. Noether's theorem has become a fundamental tool of modern theoretical physics and the \textbf{calculus of variations}. A generalisation of the seminal formulations on constants of motion in Lagrangian and Hamiltonian mechanics (1788 and 1833, respectively), it does not apply to systems that cannot be modeled with a Lagrangian; for example, dissipative systems with continuous symmetries need not have a corresponding conservation law.
+
+\part{\LARGE{Classical Mechanics}}
+\import{../}{classical_mechanics.tex}
+
+\part{\LARGE{Quantum Mechanics}}
+
+\part{\LARGE{Relativistic}}
+\import{../}{relativistic.tex}
+
+
+\backmatter
+\import{../}{bibliography.tex}
+
+\end{document}

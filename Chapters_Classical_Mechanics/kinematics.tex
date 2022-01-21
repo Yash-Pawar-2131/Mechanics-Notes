@@ -1,0 +1,133 @@
+\emph{``\textbf{Kinematics} is often described as \textbf{applied geometry}, where the movement of a mechanical system is described using the \textbf{rigid transformation} of \textbf{Euclidean geometry}.''}
+
+\section{Introduction}
+\textbf{Kinematics} is a subfield of \textbf{physics}, developed in \textbf{classical mechanics}, that describes the motion of points, bodies (objects), and systems of bodies (groups of objects) without considering the forces that cause them to move. Kinematics, as a field of study, is often referred to as the "\textbf{geometry of motion}" and is occasionally seen as a branch of mathematics. A kinematics problem begins by describing the geometry of the system and declaring the initial conditions of any known values of \textbf{position}, \textbf{velocity} and/or \textbf{acceleration} of points within the system.
+
+\section{Position}
+The \textbf{position} of a \textbf{particle} is defined as the coordinate vector from the origin of a coordinate frame to the particle. It expresses both the distance of the point from the origin and its direction from the origin. In three dimensions, the position vector $\mathbf{r}$ can be expressed as
+\[
+\mathbf{r} = (x, y, z) = x\hat{\mathbf{i}} + y\hat{\mathbf{j}} + z\hat{\mathbf{k}}
+\]
+where, $x$, $y$ and $z$ are the \textbf{Cartesian coordinates} and $\hat{\mathbf{i}}$, $\hat{\mathbf{j}}$ and $\hat{\mathbf{k}}$ are the unit vectors along the $x$, $y$ and $z$ coordinate axes, respectively. The \textbf{magnitude} of the positon vector $|\mathbf{r}|$ gives the distance between the point $\mathbf{r}$ and the origin.
+\[
+|\mathbf{r}| = \sqrt{x^2 + y^2 + z^2}.
+\]
+the \textbf{direction cosines} of the position vector provide a quantitative measure of direction.
+\\\\
+The \textbf{trajectory} of a particle is a vector function of time, $\mathbf{r}(t)$, which defines the curve traced by the moving particle, given by
+\[
+\mathbf{r}(t) = x(t)\hat{\mathbf{i}} + y(t)\hat{\mathbf{j}} + z(t)\hat{\mathbf{k}},
+\]
+where $x(t)$, $y(t)$ and $z(t)$ describe each coordinate of the particle's position as a function of time.
+
+\section{Velocity}
+The \textbf{velocity} of a \textbf{particle} is a vector quantity that describes the magnitude as well as direction of motion of the particle. Consider the ratio formed by dividing the difference of two positions of a particle by the time interval. This ratio is called the \textbf{average velocity} over that time interval and is defined as
+\[
+\mathbf{v}_{\rm {avg}} = \frac{\Delta\mathbf{r}}{\Delta t}\ ,
+\]
+where $\Delta\mathbf{r}$ is the change in the position vector during the time interval $\Delta t$. In the limit that the time interval $\Delta t$ approaches zero, the average velocity approaches the instantaneous velocity, defined as the time derivative of the position vector,
+\[
+\mathbf{v} = \lim _{\Delta t\to 0}\frac{\Delta\mathbf{r}}{\Delta t} = \frac{d\mathbf {r}}{dt} = \dot{\mathbf{r}} = \dot{x}\hat{\mathbf{i}} + \dot{y}\hat{\mathbf{j}} + \dot {z}\hat{\mathbf{k}},
+\]
+where the dot denotes a derivative with respect to time. Furthermore, this velocity is \textbf{tangent} to the particle's trajectory at every position along its path. Note that in a non-rotating frame of reference, the derivatives of the coordinate directions are not considered as their directions and magnitudes are constants.
+\\\\
+The \textbf{speed} of an object is the magnitude of its velocity. It is a \textbf{scalar} quantity:
+\[
+v = |\mathbf{v}| = \frac{ds}{dt},
+\]
+where $s$ is the arc-length measured along the trajectory of the particle. This arc-length must always increase as the particle moves. Hence, $ds/dt$ is non-negative, which implies that speed is also non-negative.
+
+\section{Acceleration}
+The \textbf{acceleration} of a particle is the vector defined by the rate of change of the velocity vector. The \textbf{average acceleration} of a particle over a time interval is defined as the ratio.
+\[
+\mathbf{a}_{\rm{avg}} = \frac{\Delta\mathbf{v}}{\Delta t}\ ,
+\]
+where $\Delta\mathbf{v}$ is the difference in the velocity vector and $\Delta t$ is the time interval.
+\\\\
+The acceleration of the particle is the limit of the average acceleration as the time interval approaches zero, which is the time derivative,
+\[
+\mathbf{a} = \lim_{\Delta t\to 0}\frac{\Delta\mathbf{v}}{\Delta t} = \frac{d\mathbf{v} }{dt} = \dot{\mathbf{v}} = \dot{v}_x\hat{\mathbf{i}} + \dot{v}_y\hat{\mathbf{j}} + \dot {v}_z\hat{\mathbf{k}}
+\]
+or
+\[
+\mathbf{a} = \ddot{\mathbf{r}} = \ddot{x}\hat{\mathbf{i}} + \ddot{y}\hat{\mathbf{j}} + \ddot{z}\hat{\mathbf{k}}
+\]
+\begin{note}
+In a non-rotating frame of reference, the derivatives of the coordinate directions are not considered as their directions and magnitudes are constants.
+\end{note}
+The magnitude of the acceleration of an object is the magnitude $|\mathbf{a}|$ of its acceleration vector. It is a \textbf{scalar} quantity:
+\[
+|\mathbf{a}| = |\dot{\mathbf{v}}| = \frac{dv}{dt},
+\]
+
+\subsection{Particle trajectories in cylindrical-polar coordinates}
+Consider a particle $P$ that moves only on the surface of a circular cylinder $\mathbf{r}(t) =$  constant, it is possible to align the $Z$ axis of the fixed frame $F$ with the axis of the cylinder. Then, the angle $\theta$ around this axis in the $X–Y$ plane can be used to define the trajectory as,
+\[
+\mathbf{r}(t) = R\cos(\theta(t))\hat{\mathbf{i}} + R\sin(\theta(t))\hat{\mathbf{j} } + z(t)\hat{\mathbf{k}}
+\]
+where the constant distance from the center is denoted as $R$, and $\theta = \theta(t)$ is a function of time.\\
+The cylindrical coordinates for $\mathbf{r}(t)$ can be simplified by introducing the radial and tangential unit vectors,
+\[
+\mathbf{e}_r = \cos(\theta(t))\hat{\mathbf{i}} + \sin(\theta(t))\hat{\mathbf{j}}, \quad \mathbf{e}_\theta = -\sin(\theta(t))\hat{\mathbf{i}} + \cos(\theta(t))\hat{\mathbf{j}}.
+\]
+and their time derivatives from elementary calculus:
+\[
+\frac{d}{dt}\mathbf{e}_r = \dot{\mathbf{e}}_r = \dot{\theta}\mathbf{e}_\theta
+\\
+\frac{d}{dt}\dot{\mathbf{e}}_r = \ddot{\mathbf{e}}_r = \ddot{\theta}\mathbf{e}_\theta - \dot{\theta}\mathbf{e}_r
+\\
+\frac{d}{dt}\mathbf{e}_\theta = \dot{\mathbf{e}}_\theta = -\dot{\theta}\mathbf {e} _{r}
+\\
+\frac{d}{dt}\dot{\mathbf{e}}_\theta = \ddot{\mathbf{e}}_\theta = -\ddot{\theta}\mathbf{e}_r - \dot{\theta}^2\mathbf{e}_\theta.
+\]
+Using this notation, $\mathbf{r}(t)$ takes the form,
+\[
+\mathbf{r}(t) = R\mathbf{e}_r + z(t)\hat{\mathbf{k}}.
+\]
+In general, the trajectory $\mathbf{r}(t)$ is not constrained to lie on a circular cylinder, so the radius $R$ varies with time and the trajectory of the particle in cylindrical-polar coordinates becomes:
+\[
+\mathbf{r}(t) = R(t)\mathbf{e}_r + z(t)\hat{\mathbf{k}}.
+\]
+Where $R$, $\theta$, and $z$ might be continuously differentiable functions of time and the function notation is dropped for simplicity. The velocity vector $\mathbf{v}_P$ is the time derivative of the trajectory $\mathbf{r}(t)$, which yields:
+\[
+\mathbf{v}_P = \frac{d}{dt}\left(R\mathbf{e}_r + z\hat{\mathbf{k}}\right) = \dot{R}\mathbf{e}_r + R\dot{\mathbf{e}}_r + \dot{z}\hat{\mathbf{k}} = \dot{R}\mathbf{e}_r + R\dot{\theta}\mathbf{e}_\theta + \dot{z}\hat{\mathbf{k}}.
+\]
+Similarly, the acceleration $\mathbf{a}_P$, which is the time derivative of the velocity $\mathbf{v}_P$, is given by:
+\[
+\mathbf{a}_P = \frac{d}{dt}\left(\dot {R}\mathbf{e} _r + R\dot{\theta}\mathbf{e}_\theta  + \dot{z}\hat{\mathbf{k}}\right) = \left(\ddot {R} - R\dot{\theta}^2\right)\mathbf{e} _r + \left(R\ddot{\theta} + 2\dot{R}\dot{\theta}\right)\mathbf{e}_\theta + \ddot{z}\hat {\mathbf{k}}.
+\]
+The term $-R\dot{\theta}^2\mathbf{e}_r$ acts toward the center of curvature of the path at that point on the path, is commonly called the centripetal acceleration. The term $2\dot{R}\dot{\theta}\mathbf{e}_{\theta}$ is called the Coriolis acceleration.
+\\\\
+\subsubsection{Constant radius}
+If the trajectory of the particle is constrained to lie on a cylinder, then the radius R is constant and the velocity and acceleration vectors simplify. The velocity of vP is the time derivative of the trajectory r(t),
+\[
+\mathbf{v}_P = \frac{d}{dt}\left(R\mathbf{e}_r + z\hat{\mathbf{k}}\right) = R\dot{\theta}\mathbf{e}_\theta + \dot{z}\hat{\mathbf{k}}.
+\]
+\subsubsection{Planar circular trajectories}
+A special case of a particle trajectory on a circular cylinder occurs when there is no movement along the $Z$ axis:
+\[
+\mathbf{v}_P = \frac{d}{dt}\left(R\mathbf{e}_r + z_0\hat{\mathbf{k}}\right) = R\dot{\theta}\mathbf{e}_\theta = R\omega\mathbf{e}_\theta,
+\]
+where $\omega = \dot{\theta}$ is the angular velocity of the unit vector $\mathbf{e}_\theta$ around the $z$ axis of the cylinder.
+The acceleration $\mathbf{a}_P$ of the particle $P$ is now given by:
+\[
+\mathbf{a}_P = \frac{d}{dt}\left(R\dot{\theta}\mathbf{e}_\theta \right) = -R\dot{\theta }^2\mathbf{e}_r + R\ddot{\theta}\mathbf{e}_\theta .
+\]
+The components
+\[
+a_r = -R\dot{\theta}^2,\quad a_\theta = R\ddot{\theta},
+\]
+are called, respectively, the radial and tangential components of acceleration.
+The notation for angular velocity and angular acceleration is often defined as
+\[
+\omega = \dot{\theta },\quad \alpha = \ddot{\theta},
+\]
+so the radial and tangential acceleration components for circular trajectories are also written as
+\[
+a_r = -R\omega^2,\quad a_\theta = R\alpha .
+\]
+
+
+\section{Moving Reference Frame}
+\section{Rotation}
+\section{Kinematics Constraints}

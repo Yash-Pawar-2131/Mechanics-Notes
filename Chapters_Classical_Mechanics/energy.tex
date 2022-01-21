@@ -1,0 +1,75 @@
+\section{Work}
+\textbf{Work} is the energy transferred to or from an object via the application of force along a displacement. In its simplest form, it is often represented as the product of force and displacement. A force is said to do positive work if (when applied) it has a component in the direction of the displacement of the point of application. A force does negative work if it has a component opposite to the direction of the displacement at the point of application of the force.
+\\\\
+Work is a scalar quantity, so it has only magnitude and no direction. Work transfers energy from one place to another, or one form to another. The SI unit of work is the joule ($\textrm{J}$), the same unit as for energy.
+\subsection{Computation}
+\textbf{Work} is the result of a \textbf{force} on a point that follows a curve $X$, with a velocity $\mathbf{v}$, at each instant. The small amount of work $\delta W$ that occurs over an instant of time $dt$ is calculated as
+\[
+\delta W  = \mathbf{F}\cdot d\mathbf{s} = \mathbf{F}\cdot\mathbf{v}dt
+\]
+where the $\mathbf{F}\cdot\mathbf{v}$ is the power over the instant $dt$. The sum of these small amounts of work over the trajectory of the point yields the work,
+\[
+W = \int_{t_1}^{t_2} \mathbf{F}\cdot d\mathbf{s} = \int_{t_1}^{t_2} \mathbf{F}\cdot \frac{d\mathbf{s}}{dt} dt = \int_C \mathbf{F}\cdot d\mathbf{s}
+\]
+where $C$ is the trajectory from $\mathbf{x}(t_1)$ to $\mathbf{x}(t_2)$. This integral is computed along the trajectory of the particle, and is therefore said to be path dependent.
+\\\\
+If the force is always directed along this line, and the magnitude of the force is $\mathbf{F}$, then this integral simplifies to
+\[
+W = \int_C F\, ds
+\]
+where $s$ is the displacement along the line. If $F$ is constant, in addition to being directed along the line, then the integral simplifies further to
+\[
+W = \int_C F\, ds = F\int_C ds = Fs
+\]
+where $s$ is the displacement of the point along the line.
+\\\\
+This calulation can be generalized for a constant force that is not directed along the line, followed by the particle. In this case the dot product $\mathbf{F}\cdot ds = F\cos\theta ds$, where $\theta$ is the angle between the force vector and the direction of movement, that is
+\[
+W = \int_C \mathbf{F}\cdot d\mathbf{s} = Fs\cos\theta
+\]
+
+\subsection{Work-energy Principle}
+The \textbf{principle of work and kinetic energy} (also known as the \textbf{work–energy principle}) states that the work done by all forces acting on a particle (the work of the resultant force) equals the change in the kinetic energy of the particle. That is, the work $W$ done by the resultant force on a particle equals the change in the particle's kinetic energy $E_k$,
+\[
+W = \Delta E_k = \tfrac{1}{2}mv_2^2 - \tfrac{1}{2}mv_1^2 ,
+\]
+where $v_1$ and $v_2$ are the speeds of the particle before and after the work is done, and $m$ is its mass.
+\\\\
+The derivation of the work–energy principle begins with Newton’s second law of motion and the resultant force on a particle. Computation of the scalar product of the forces with the velocity of the particle evaluates the instantaneous \textbf{power} added to the system.
+\\\\
+Constraints define the direction of movement of the particle by ensuring there is no component of velocity in the direction of the constraint force. This also means the constraint forces do not add to the instantaneous power. The time integral of this scalar equation yields work from the instantaneous power, and kinetic energy from the scalar product of velocity and acceleration. The fact that the work–energy principle eliminates the constraint forces underlies \textbf{Lagrangian mechanics}.
+
+\section{Kinetic Energy}
+\textbf{Kinetic energy} of an object is the energy that it possesses due to its motion. It is defined as the work needed to accelerate a body of a given mass from rest to its stated velocity. Having gained this energy during its acceleration, the body maintains this kinetic energy unless its speed changes. The same amount of work is done by the body when decelerating from its current speed to a state of rest. Formally, a kinetic energy is any term in a system's Lagrangian which includes a derivative with respect to time.
+\\\\
+In classical mechanics, the kinetic energy of a non-rotating object of mass $m$ traveling at a speed $\mathbf{v}$ is $\frac{1}{2}m\mathbf{v}^2$. In relativistic mechanics, this is a good approximation only when $\textbf{v}$ is much less than the speed of light.
+
+\section{Potential Energy}
+\textbf{Potential energy} is the energy held by an object because of its position relative to other objects, stresses within itself, its electric charge, or other factors.
+\\\\
+Potential energy is associated with forces that act on a body in a way that the total work done by these forces on the body depends only on the initial and final positions of the body in space. These forces, that are called \textbf{conservative forces}, can be represented at every point in space by vectors expressed as gradients of a certain scalar function called \textbf{potential}.
+
+	\subsection{Conservative Force}
+A \textbf{conservative force} is a force with the property that the total work done in moving a particle between two points is independent of the path taken.
+\\\\
+A conservative force depends only on the position of the object. If a force is conservative, it is possible to assign a numerical value for the potential at any point and conversely, when an object moves from one location to another, the force changes the potential energy of the object by an amount that does not depend on the path taken, contributing to the mechanical energy and the overall conservation of energy. If the force is not conservative, then defining a scalar potential is not possible, because taking different paths would lead to conflicting potential differences between the start and end points.
+\begin{definition}
+A force field $\mathbf{F}$, defined everywhere in space (or within a simply-connected volume of space), is called a \textbf{conservative force} or \textbf{conservative vector field} if it meets any of these three equivalent conditions:
+	\begin{enumerate}
+	\item The \textbf{curl} of $\mathbf{F}$ is the zero vector:
+		\begin{itemize}
+		\item $\nabla\times\mathbf{F} = \mathbf{0}$.
+		\end{itemize}
+	\item There is zero net \textbf{work}($W$) done by the force when moving a particle through a trajectory that starts and ends in the same place:
+		\begin{itemize}
+		\item $W = \oint_C\mathbf{F}\cdot d\mathbf{r} = \mathbf{0}$.
+		\end{itemize}
+	\item The force can be written as the negative \textbf{gradient} of a \textbf{potential}, $\Phi$:
+		\begin{itemize}
+		\item $\mathbf{F} = -\nabla\Phi$.
+		\end{itemize}
+	\end{enumerate}
+\end{definition}
+Many forces (particularly those that depend on velocity) are not force fields. In these cases, the above three conditions are not mathematically equivalent. 
+	\subsection{Non-conservative Force}
+\section{Conservation of Energy}
